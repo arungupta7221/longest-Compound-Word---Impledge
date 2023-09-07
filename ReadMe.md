@@ -41,3 +41,22 @@ the algorithm. Start measuring time before processing the queue and end it after
 
 Step-7. ## Print Results: Finally, print the longest and second-longest compound words found
 along with the time taken for execution.
+
+## Unit Test
+
+for unit testing I have used 'gtest' testing framework.
+here are the steps:-
+
+1. Install Google Test as mentioned in the previous response.
+2. Create a C++ source file for your tests, test.cpp.
+3. Write the test cases for the Trie class. I have write in 'test.cpp' file.
+4. Compile tests and the original code together with the Google Test library. it'll
+   need to link against the Google Test library, and the compiled binary will run the tests:
+
+
+    `g++ -std=c++11 -o main.cpp trie.cpp test.cpp -lgtest -lgtest_main -pthread`
+
+5. Run the compiled binary to execute the unit tests:
+
+
+    `./main.cpp`
